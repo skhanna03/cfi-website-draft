@@ -56,19 +56,28 @@ AOS.init({
   OnePageNav();
 
   $(window).scroll(function() {
-
+/*
     var $this = $(this),
-      st = $this.scrollTop(),
-      navbar = $('.site-header');
+      st = $(window).scrollTop(),
+      navbar = $('.navbar'),
+      newH = navbar.height(),
+      menu = 120;
 
+      if (st/3 <= 50) newH = menu;
+      else if (st/3 <= 100) newH = menu - st/3 + 50;
+      else newH = 70;
+      navbar.css({'height': newH + 'px'});
+    
     if (st > 150) {
       if ( !navbar.hasClass('scrolled') ) {
         navbar.addClass('scrolled');  
+        $("#logo").attr("src", "logo_graphic.png");
       }
     } 
     if (st < 150) {
       if ( navbar.hasClass('scrolled') ) {
         navbar.removeClass('scrolled sleep');
+        $("#logo").attr("src", "logo_text.png")
       }
     } 
     if ( st > 350 ) {
@@ -82,6 +91,7 @@ AOS.init({
         navbar.addClass('sleep');
       }
     }
+    */
 
   }); 
 
