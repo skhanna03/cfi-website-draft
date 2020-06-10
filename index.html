@@ -31,35 +31,34 @@
     <body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
 
     <div class="site-wrap">
-      
-      <nav class="site-menu" id="ftco-navbar-spy">
-        <div class="site-menu-inner" id="ftco-navbar">
-          <ul class="list-unstyled">
-            <li><a href="#section-home">Home</a></li>
-            <li><a href="#section-about">About Us</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="#section-contact">Contact</a></li>
-          </ul>
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent skrollable skrollable-between" data-0="height:110px;" data-90="height:80px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <a class="navbar-brand skrollable skrollable-between" data-0="height:90px;background-size:100%;" data-90="height:60px;background-size:90%;"" href="#"></a>
         </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Our Work</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+          </li>
+          </ul>
+      </div>
       </nav>
 
-      <header class="site-header">
-        <div class="row align-items-center">
-          <div class="col-5 col-md-3">
-             
-          </div>
-          <div class="col-2 col-md-6 text-center site-logo-wrap">
-            <a href="index.html" class="site-logo">
-              Coding for Impact
-            </a>
-          </div>
-          <div class="col-5 col-md-3 text-right menu-burger-wrap">
-            <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
-
-          </div>
-        </div>
-       
-      </header> <!-- site-header -->
+       <!-- site-header -->
       
       <div class="main-wrap " id="section-home">
 
@@ -629,7 +628,11 @@
     
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+  </script>
+  
     <script src="js/main.js"></script>
   </body>
 </html>
