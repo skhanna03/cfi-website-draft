@@ -23315,7 +23315,7 @@ function offsetAnchor() {
                 if ($secondarynav.length > 0 && $secondarynav.find('.secondary-nav__link').length > 0) {
                     var topPos = scrollTop <= 90 ? '110px' : '80px';
                     $secondarynav.stop().animate({
-                        'display': 'block',
+                        
                         'height': '60px',
                         'opacity': 1,
                         'top': topPos,

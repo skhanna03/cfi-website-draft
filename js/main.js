@@ -93,7 +93,83 @@ AOS.init({
     }
     */
 
-  }); 
+  });
+  
+  $('.nav-link').on('mouseenter', function(e) {
+    var scrollTop = $(window).scrollTop();
+    var lowerNavbar = $('.secondary-nav .secondary-nav-inner');
+    lowerNavbar.html('');
+
+    if (this.id === "ourWorkLink") {
+      lowerNavbar.html(
+      "<a href='' class='secondary-nav__link'>what</a>" + 
+      "<a href='' class='secondary-nav__link'>adt</a>" + 
+      "<a href='' class='secondary-nav__link'>what</a>"
+      );
+    } else if (this.id === "aboutUsLink") {
+      lowerNavbar.html(
+        "<a href='' class='secondary-nav__link'>what</a>" + 
+        "<a href='' class='secondary-nav__link'>adt</a>" + 
+        "<a href='' class='secondary-nav__link'>what</a>"
+        );
+    } else if (this.id === "impactLink") {
+      lowerNavbar.html(
+        "<a href='' class='secondary-nav__link'>what</a>" + 
+        "<a href='' class='secondary-nav__link'>adt</a>" + 
+        "<a href='' class='secondary-nav__link'>what</a>"
+        );
+    } else if (this.id === "whereLink") {
+      lowerNavbar.html(
+        "<a href='' class='secondary-nav__link'>what</a>" + 
+        "<a href='' class='secondary-nav__link'>adt</a>"
+        );
+    }
+
+    var topPos = scrollTop <= 90 ? '110px' : '80px';
+    $('.secondary-nav').css({'display': 'inline', 'background': '#fff'});
+    $('.secondary-nav__background').css({'display': 'inline'});
+
+    $('.secondary-nav').stop().animate({
+      'height': '60px',
+      'opacity': 1,
+      'top': topPos,
+      'border-width': '1px'
+    }, 500);
+    $('.secondary-nav__background').stop().animate({
+        'opacity': 0.9
+    }, 500);
+
+    console.log('hm');
+
+    if (scrollTop <= 90) {
+        $('.header-background').stop().animate({
+          'opacity': 0.7
+        }, 500);
+    }
+
+
+  });
+
+  $('.navbar').on('mouseleave', function(e) {
+      var scrollTop = $(window).scrollTop();
+
+      $('.secondary-nav').stop().animate({
+        'height': '0px',
+        'opacity': 0,
+        'border-width': '0px'
+      }, 500);
+      $('.secondary-nav__background').stop().animate({
+          'display': 'none',
+          'opacity': 0
+      }, 500);
+
+      if (scrollTop <= 90) {
+        $('.header-background').stop().animate({
+          'opacity': 0
+        }, 500);
+      }
+      
+  });
 
 
   $('.js-site-nav-toggle').on('click', function(e) {
