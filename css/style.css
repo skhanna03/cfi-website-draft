@@ -562,6 +562,15 @@ textarea.form-control {
   margin-bottom: 10px;
 }
 
+.nav-link {
+  color: white !important;
+  position: relative;
+}
+
+.header-background {
+  width:100%;height:100%;background:#01224e;opacity:0;zoom:1;position:absolute;top:0;left:0;
+}
+
 .site-header .social li {
   display: inline-block;
 }
