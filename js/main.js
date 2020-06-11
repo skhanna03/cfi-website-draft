@@ -134,17 +134,17 @@ AOS.init({
       'opacity': 1,
       'top': topPos,
       'border-width': '1px'
-    }, 500);
+    }, 250);
     $('.secondary-nav__background').stop().animate({
         'opacity': 0.9
-    }, 500);
+    }, 250);
 
     console.log('hm');
 
     if (scrollTop <= 90) {
         $('.header-background').stop().animate({
           'opacity': 0.7
-        }, 500);
+        }, 250);
     }
 
 
@@ -157,16 +157,16 @@ AOS.init({
         'height': '0px',
         'opacity': 0,
         'border-width': '0px'
-      }, 500);
+      }, 250);
       $('.secondary-nav__background').stop().animate({
           'display': 'none',
           'opacity': 0
-      }, 500);
+      }, 250);
 
       if (scrollTop <= 90) {
         $('.header-background').stop().animate({
           'opacity': 0
-        }, 500);
+        }, 250);
       }
       
   });
@@ -213,7 +213,7 @@ AOS.init({
           }, i * 100);
 
         });
-      }, 500);
+      }, 250);
       
     }
 
