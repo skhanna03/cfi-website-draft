@@ -562,13 +562,13 @@ textarea.form-control {
   margin-bottom: 10px;
 }
 
-.nav-link {
+.navbar .nav-link {
   color: white !important;
   position: relative;
   -webkit-transition:opacity .3s;transition:opacity .3s;width:auto;height:50px;color:#fff;text-transform:uppercase;font-size:16px;line-height:50px;font-family:Gotham-Medium;margin:0 15px;text-align:center;min-width:55px;letter-spacing:1px;
 }
 
-.nav-link:hover {
+.navbar .nav-link:hover {
   border-bottom: 3px solid white;
   transition: opacity 2.0s ease-in;
   -webkit-transition: opacity 2.0s ease-in;
