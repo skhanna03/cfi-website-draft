@@ -102,23 +102,24 @@ AOS.init({
 
     if (this.id === "ourWorkLink") {
       lowerNavbar.html(
-      "<a href='' class='secondary-nav__link'>what</a>" + 
-      "<a href='' class='secondary-nav__link'>adt</a>" + 
-      "<a href='' class='secondary-nav__link'>what</a>"
+      "<a href='' class='secondary-nav__link'>Combatting Inequality</a>" + 
+      "<a href='' class='secondary-nav__link'>Partnerships</a>" + 
+      "<a href='' class='secondary-nav__link'>Projects</a>"
       );
     } else if (this.id === "aboutUsLink") {
       lowerNavbar.html(
-        "<a href='' class='secondary-nav__link'>what</a>" + 
-        "<a href='' class='secondary-nav__link'>adt</a>" + 
-        "<a href='' class='secondary-nav__link'>what</a>"
+        "<a href='' class='secondary-nav__link'>Core Values</a>" + 
+        "<a href='' class='secondary-nav__link'>People</a>" + 
+        "<a href='' class='secondary-nav__link'>Careers</a>"
         );
     } else if (this.id === "impactLink") {
       lowerNavbar.html(
-        "<a href='' class='secondary-nav__link'>what</a>" + 
-        "<a href='' class='secondary-nav__link'>adt</a>" + 
-        "<a href='' class='secondary-nav__link'>what</a>"
+        "<a href='' class='secondary-nav__link'>North America</a>" + 
+        "<a href='' class='secondary-nav__link'>Central America</a>" + 
+        "<a href='' class='secondary-nav__link'>Europe & Asia</a>" + 
+        "<a href='' class='secondary-nav__link'>Africa</a>"
         );
-    } else if (this.id === "whereLink") {
+    } else if (this.id === "contactLink") {
       lowerNavbar.html(
         "<a href='' class='secondary-nav__link'>what</a>" + 
         "<a href='' class='secondary-nav__link'>adt</a>"
