@@ -95,7 +95,7 @@ AOS.init({
 
   });
   
-  $('.navbar .nav-link').on('mouseenter', function(e) {
+  $('.nav-link').on('mouseenter', function(e) {
     var scrollTop = $(window).scrollTop();
     var lowerNavbar = $('.secondary-nav .secondary-nav-inner');
     lowerNavbar.html('');
