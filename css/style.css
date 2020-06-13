@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Muli:wght@200;300;400&display=swap');
 
+
 #section-about p {
   text-align:justify;
   color: #2a3035;  
@@ -1176,9 +1177,24 @@ textarea.form-control {
   color: #ff7a5c;
 }
 
+.fa-facebook:hover {
+
+  color:#3b5998;
+}
+
+.fa-twitter:hover {
+  color: #00acee
+}
+.fa-linkedin:hover {
+  color: #0e76a8 
+}
+.fa-instagram:hover {
+  color: #8a3ab9
+}
+
 .footer-contact-widget .contact-phone {
   font-size: 30px;
-  color: #000;
+  color: #2a3035;
 }
 
 .lead {
@@ -2116,7 +2132,7 @@ textarea.form-control {
 
 .ftco-footer-newsletter .form-group .form-control {
   background: #fff;
-  color: #000;
+  color: #2a3035;
   border: none !important;
   border-radius: 0px;
   padding-right: 70px;
@@ -2138,7 +2154,7 @@ textarea.form-control {
 }
 
 .ftco-footer {
-  background: #121212;
+  background: #2a3035;
   padding: 7em 0;
   font-size: 15px;
   font-weight: 400;
