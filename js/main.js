@@ -107,6 +107,11 @@ AOS.init({
           "background": "url('images/abt/about-header.png') no-repeat",
           "background-size": "cover"
         });
+      } else if (this.id === "democracySection") {
+        $("#servedSection").css({
+          "background": "url('images/banner_images/democracy.jpg')",
+          "background-size": "cover"
+        });
       }
   });
   
