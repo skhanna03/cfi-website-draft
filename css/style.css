@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Muli:wght@200;300;400&display=swap');
+
+#section-about p {
+  text-align:justify;
+  color: #2a3035;  
+  margin-left:20%; 
+  margin-right:20%; 
+  font-family: 'Montserrat'; 
+  font-weight: 100; 
+  font-size: 18px;
+}
 
 hr {
   margin-left:40%;
@@ -159,20 +170,6 @@ hr {
       margin-left: 1px;
       margin-right: 1px;
       color: #78d5ef; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .portfolio_image_area {
   padding-top: 147px;
@@ -384,7 +381,7 @@ html {
 
 body {
   background: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", "Muli", "Open Sans", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.8;
   font-weight: 300;
@@ -609,7 +606,7 @@ textarea.form-control {
 	font-size: 14px;
 	line-height: 60px;
 	margin: 0 15px;
-  font-family: "Muli";
+  font-family: "Muli", "Montserrat", sans-serif;
   font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 1px
