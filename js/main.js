@@ -95,7 +95,7 @@ AOS.init({
 
   });
   
-  $('.navbar .nav-link').on('mouseenter', function(e) {
+  $('.navbar .hover-background').on('mouseenter', function(e) {
     var scrollTop = $(window).scrollTop();
     var lowerNavbar = $('.secondary-nav .secondary-nav-inner');
     lowerNavbar.html('');
@@ -119,7 +119,7 @@ AOS.init({
         "<a href='' class='secondary-nav__link'>Europe & Asia</a>" + 
         "<a href='' class='secondary-nav__link'>Africa</a>"
         );
-    } else if (this.id === "contactLink") {
+    } else if (this.id === "donateButton") {
       lowerNavbar.html(
         "<a href='' class='secondary-nav__link'>For Democracy</a>" + 
         "<a href='' class='secondary-nav__link'>For COVID-19</a>" +
