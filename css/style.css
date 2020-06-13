@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Muli:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+.media-body p {
+  font-size: 16px;
+}
+
 .fadeSection {
   transition: background 0.3s ease-in;
   -webkit-transition: background 0.3s ease-in;
