@@ -128,9 +128,9 @@ AOS.init({
       );
     } else if (this.id === "aboutUsLink") {
       lowerNavbar.html(
-        "<a href='' class='secondary-nav__link'>Core Values</a>" + 
-        "<a href='' class='secondary-nav__link'>People</a>" + 
-        "<a href='' class='secondary-nav__link'>Careers</a>"
+        "<a href='team.html#coreValues' class='secondary-nav__link'>Core Values</a>" + 
+        "<a href='team.html#ourTeam' class='secondary-nav__link'>Our Team</a>" + 
+        "<a href='team.html#careers' class='secondary-nav__link'>Careers</a>"
         );
     } else if (this.id === "impactLink") {
       lowerNavbar.html(
