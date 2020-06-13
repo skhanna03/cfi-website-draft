@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Muli:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+#servedSection h1 {
+  color: white;
+  font-family: 'Playfair Display', 'Montserrat', sans-serif;
+}
+
+#servedSection .row .col {
+  color: white !important;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 25px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+#servedSection .row .col:hover {
+  opacity: 0.9;
+}
+
+#servedSection .row .col .topHeader {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#servedSection .row .col .bottomHeader {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: bold;
+}
 
 #section-about p {
   text-align:justify;
@@ -762,6 +794,22 @@ textarea.form-control {
 .btn.btn-primary.btn-outline-primary {
   border-width: 2px;
   cursor: pointer;
+}
+
+.btn.btn-transparent {
+  color: white;
+  background: none;
+  text-decoration: none;
+  border: 2px solid white;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.btn.btn-transparent:hover {
+  background: white;
+  color: rgba(0, 0, 0, 0.623);
+  text-decoration: none;
 }
 
 .btn.btn-outline-white:hover {
