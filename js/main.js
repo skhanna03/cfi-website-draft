@@ -94,6 +94,21 @@ AOS.init({
     */
 
   });
+
+  $("#servedSection .row .col").on("mouseenter", function(e) {
+      console.log("w");
+      if (this.id === "lotSection") {
+        $("#servedSection").css({
+          "background": "url('images/banner_images/lot2545.jpeg') no-repeat center",
+          "background-size": "cover"
+        });
+      } else if (this.id === "reiSection") {
+        $("#servedSection").css({
+          "background": "url('images/abt/about-header.png') no-repeat",
+          "background-size": "cover"
+        });
+      }
+  });
   
   $('.navbar .hover-background').on('mouseenter', function(e) {
     var scrollTop = $(window).scrollTop();
@@ -148,8 +163,6 @@ AOS.init({
           'opacity': 0.7
         }, 250);
     }
-
-
   });
 
   $('.navbar').on('mouseleave', function(e) {
