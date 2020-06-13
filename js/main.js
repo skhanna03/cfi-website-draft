@@ -121,8 +121,9 @@ AOS.init({
         );
     } else if (this.id === "contactLink") {
       lowerNavbar.html(
-        "<a href='' class='secondary-nav__link'>what</a>" + 
-        "<a href='' class='secondary-nav__link'>adt</a>"
+        "<a href='' class='secondary-nav__link'>For Democracy</a>" + 
+        "<a href='' class='secondary-nav__link'>For COVID-19</a>" +
+        "<a href='' class='secondary-nav__link'>For Black Lives Matter</a>"
         );
     }
 
