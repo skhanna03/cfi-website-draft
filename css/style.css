@@ -347,6 +347,7 @@ hr {
 .portfolio_image_area .single_Portfolio .portfolio_hover .boxed-btn3:hover {
   border: 1px solid #615CFD !important;
   color: #615CFD !important;
+  color: white !important;
   background: #fff !important;
 }
 
@@ -401,9 +402,10 @@ hr {
 
 /* line 45, ../../Arafath/CL/December/233. Startup/HTML/scss/_btn.scss */
 .boxed-btn3:hover {
-  border: 1px solid #615CFD;
+  border: 2px solid #615CFD;
   color: #615CFD !important;
-  background: transparent;
+  
+  background: white;
 }
 
 /* line 50, ../../Arafath/CL/December/233. Startup/HTML/scss/_btn.scss */
