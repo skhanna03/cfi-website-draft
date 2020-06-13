@@ -164,9 +164,9 @@ AOS.init({
     console.log('hm');
 
     if (scrollTop <= 90) {
-        $('.header-background').stop().animate({
-          'opacity': 0.7
-        }, 250);
+        $('.header-background').css({
+          'opacity': 0.5
+        });
     }
   });
 
