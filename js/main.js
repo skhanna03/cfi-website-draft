@@ -96,7 +96,7 @@ AOS.init({
   });
 
   $("#servedSection .row .col").on("mouseenter", function(e) {
-      console.log("w");
+      console.log(this.id);
       if (this.id === "lotSection") {
         $("#servedSection").css({
           "background": "url('images/banner_images/lot2545.jpeg') no-repeat center",
@@ -110,6 +110,11 @@ AOS.init({
       } else if (this.id === "democracySection") {
         $("#servedSection").css({
           "background": "url('images/banner_images/democracy.jpg')",
+          "background-size": "cover"
+        });
+      } else if (this.id === "haitiSection") {
+        $("#servedSection").css({
+          "background": "url('images/banner_images/haiti-header.png')",
           "background-size": "cover"
         });
       }
