@@ -99,12 +99,12 @@ AOS.init({
       console.log(this.id);
       if (this.id === "lotSection") {
         $("#servedSection").css({
-          "background": "url('images/banner_images/lot2545.jpeg') no-repeat center",
+          "background": "url('images/banner_images/lot2545.png')",
           "background-size": "cover"
         });
       } else if (this.id === "reiSection") {
         $("#servedSection").css({
-          "background": "url('images/abt/about-header.png') no-repeat",
+          "background": "url('images/abt/about-header.png')",
           "background-size": "cover"
         });
       } else if (this.id === "democracySection") {
