@@ -838,15 +838,16 @@ textarea.form-control {
 }
 
 .btn.btn-outline-blue {
-  
   background: rgb(0, 183, 255);
   color: white;
   text-decoration: none;
 }
 
 .btn.btn-outline-blue:hover {
-  background: rgb(0, 183, 255) ;
-  opacity:.7;
+  background: none;
+  color: rgb(0, 183, 255);
+  border: 1px solid rgb(0, 183, 255);
+ 
 }
 
 .bg-image, .half .image, .image-bg-fullwidth {
