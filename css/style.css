@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Muli:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-#servedSection {
+.fadeSection {
   transition: background 0.5s ease-in;
 }
 
-#servedSection h1 {
+.fadeSection h1 {
   color: white;
   font-family: 'Playfair Display', 'Montserrat', sans-serif;
 }
 
-#servedSection .row .col {
+.fadeSection .row .col {
   color: white !important;
   text-align: left;
   padding: 0;
@@ -22,16 +22,16 @@
   transition: .3s all ease;
 }
 
-#servedSection .row .col:hover {
+.fadeSection .row .col:hover {
   opacity: 0.8;
 }
 
-#servedSection .row .col .topHeader {
+.fadeSection .row .col .topHeader {
   font-size: 18px;
   font-weight: 400;
 }
 
-#servedSection .row .col .bottomHeader {
+.fadeSection .row .col .bottomHeader {
   text-transform: uppercase;
   font-size: 14px;
   opacity: 0.8;
