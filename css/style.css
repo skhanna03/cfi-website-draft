@@ -1,3 +1,4 @@
+
 hr {
   margin-left:40%;
   margin-right: 40%;
@@ -5,8 +6,8 @@ hr {
   color: black;
   background-color: black !important;
   height: 1px !important
+  
 }
-
 
 .clients-logo-area > a > img {
     max-width: 170px;
