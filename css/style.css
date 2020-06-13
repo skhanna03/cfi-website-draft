@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 .fadeSection {
-  transition: background 0.5s ease-in;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
 }
 
 .fadeSection h1 {
@@ -17,13 +19,14 @@
   margin-bottom: 10px;
   cursor: pointer;
   line-height: 25px;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: .3s all ease-in;
+  -o-transition: .3s all ease-in;
+  transition: .3s all ease-in;
 }
 
 .fadeSection .row .col:hover {
   opacity: 0.8;
+  border-left: 2px solid white;
 }
 
 .fadeSection .row .col .topHeader {

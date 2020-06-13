@@ -104,12 +104,12 @@ AOS.init({
         });
       } else if (this.id === "reiSection") {
         $("#servedSection").css({
-          "background": "url('images/abt/about-header.png')",
+          "background": "url('images/banner_images/rei.png')",
           "background-size": "cover"
         });
       } else if (this.id === "democracySection") {
         $("#servedSection").css({
-          "background": "url('images/banner_images/democracy.jpg')",
+          "background": "url('images/banner_images/democracy.png')",
           "background-size": "cover"
         });
       } else if (this.id === "haitiSection") {
