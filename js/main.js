@@ -5,10 +5,55 @@ AOS.init({
 
 (function($) {
 
-	'use strict';
+  'use strict';
+
+    function fixedHeaderOffset(hash) 
+    {
+      var width = window.innerWidth;
+      console.log(width);
+
+      console.log(hash);
+      var offsetTop = $(hash).offset()['top'];
+      
+      if (hash === "#combattingInequality") {
+        $("html, body").animate({scrollTop: offsetTop - 80 }, 500);
+      } else if (hash === "#partnerships") {
+        $("html, body").animate({scrollTop: offsetTop - 80 }, 500);
+      } else if (hash === "#projects") {
+        $("html, body").animate({scrollTop: offsetTop - 140 }, 500);
+      }
+    }
+  
+    // Run on hash change (user clicked on anchor link)
+    if ( 'onhashchange' in window ) {
+      scrollUpToCompensateForFixedHeader();
+      window.addEventListener('hashchange', scrollUpToCompensateForFixedHeader);
+    }
+
+    function scrollUpToCompensateForFixedHeader()
+    {
+      var hash, 
+        target, 
+        offset;
+
+      // Get hash, e.g. #mathematics
+      hash = window.location.hash;
+      if ( hash.length < 2 ) { return; }
+      console.log(hash);
+
+      // Get :target, e.g. <h2 id="mathematics">...</h2>
+      target = document.getElementById( hash.slice(1) );
+      if ( target === null ) { return; }
+
+      // Get distance of :target from top of viewport. If it's near zero, we assume
+      // that the user was just scrolled to the :target.
+      
+      window.scrollBy(0, -fixedHeaderOffset(hash));
+      
+    }
 
   $(window).stellar({
-    responsive: false,
+    responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
     horizontalScrolling: false,
@@ -106,7 +151,6 @@ AOS.init({
   });
 
   $("#servedSection .row .col").on("mouseenter", function(e) {
-      console.log(this.id);
       if (this.id === "lotSection") {
         $("#servedSection").stop().css({
           "background": "url('images/banner_images/lot2545.png')",
@@ -137,9 +181,9 @@ AOS.init({
 
     if (this.id === "ourWorkLink") {
       lowerNavbar.html(
-      "<a href='' class='secondary-nav__link'>Combatting Inequality</a>" + 
-      "<a href='' class='secondary-nav__link'>Partnerships</a>" + 
-      "<a href='' class='secondary-nav__link'>Projects</a>"
+      "<a href='our-work.html#combattingInequality' class='secondary-nav__link'>Combatting Inequality</a>" + 
+      "<a href='our-work.html#partnerships' class='secondary-nav__link'>Partnerships</a>" + 
+      "<a href='our-work.html#projects' class='secondary-nav__link'>Projects</a>"
       );
     } else if (this.id === "aboutUsLink") {
       lowerNavbar.html(
@@ -175,8 +219,6 @@ AOS.init({
     $('.secondary-nav__background').stop().animate({
         'opacity': 0.9
     }, 250);
-
-    console.log('hm');
 
     if (scrollTop <= 90) {
         $('.header-background').css({
