@@ -873,13 +873,13 @@ textarea.form-control {
 }
 
 .form-control {
-  border: 2px solid #cccccc;
+  border: 0px
 }
 
 .form-control:hover, .form-control:focus, .form-control:active {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 2px solid #ff7a5c;
+  border: 2px solid #10bcff;
 }
 
 .site-nav-toggle {
