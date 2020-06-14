@@ -1,11 +1,12 @@
 
 
 #description {
-    font-family: Playfair Display, serif;
-    font-size: 15px
-
-
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    width: 80%;
+    float: right;
 }
+
 .container-doubleimage {
     max-width:100%;
     width: 100%;
