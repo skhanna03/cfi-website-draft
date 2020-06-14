@@ -16,6 +16,16 @@ AOS.init({
     scrollProperty: 'scroll'
   });
 
+  $.scrollIt({
+    upKey: 38,             // key code to navigate to the next section
+    downKey: 40,           // key code to navigate to the previous section
+    easing: 'linear',      // the easing function for animation
+    scrollTime: 500,       // how long (in ms) the animation takes
+    activeClass: 'active', // class given to the active nav element
+    onPageChange: null,    // function(pageIndex) that is called when page is changed
+    topOffset: -180           // offste (in px) for fixed top navigation
+    });
+
 	// bootstrap dropdown hover
 
   // loader
@@ -39,7 +49,7 @@ AOS.init({
       $('html, body').animate({
 
         scrollTop: $(hash).offset().top
-      }, 700, 'easeInOutExpo', function(){
+      }, 500, 'easeInOutExpo', function(){
         window.location.hash = hash;
       });
     });
