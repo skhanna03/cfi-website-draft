@@ -121,13 +121,14 @@ input[type="text"] {
   margin-bottom: 10px;
   cursor: pointer;
   line-height: 25px;
-  -webkit-transition: .3s all ease-in;
-  -o-transition: .3s all ease-in;
-  transition: .3s all ease-in;
+  -webkit-transition: .3s opacity ease-in;
+  -o-transition: .3s opacity ease-in;
+  transition: .3s opacity ease-in;
+  opacity: 0.7;
 }
 
 .fadeSection .row .col:hover {
-  opacity: 0.8;
+  opacity: 1;
   border-left: 2px solid white;
 }
 
