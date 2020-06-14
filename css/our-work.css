@@ -133,6 +133,20 @@
 
 }
 
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.centered-office {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #mission-statement {
     font-family: "Muli", sans-serif;
     text-transform: uppercase;
