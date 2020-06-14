@@ -214,9 +214,9 @@ AOS.init({
         );
     } else if (this.id === "donateButton") {
       lowerNavbar.html(
-        "<a href='' class='secondary-nav__link'>For Democracy</a>" + 
-        "<a href='' class='secondary-nav__link'>For COVID-19</a>" +
-        "<a href='' class='secondary-nav__link'>For Black Lives Matter</a>"
+        "<a href='donate.html' class='secondary-nav__link'>For Democracy</a>" + 
+        "<a href='donate.html' class='secondary-nav__link'>For COVID-19</a>" +
+        "<a href='donate.html' class='secondary-nav__link'>For Black Lives Matter</a>"
         );
     }
 
