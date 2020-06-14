@@ -104,7 +104,7 @@ AOS.init({
         });
       } else if (this.id === "reiSection") {
         $("#servedSection").stop().css({
-          "background": "url('images/banner_images/rei.png')",
+          "background": "url('images/our-work/our-work-header-new.png')",
           "background-size": "cover"
         });
       } else if (this.id === "democracySection") {
