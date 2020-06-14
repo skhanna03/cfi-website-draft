@@ -434,7 +434,6 @@ hr {
   font-size: 14px;
   color: #615CFD;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
 }
 
 /* line 70, ../../Arafath/CL/December/233. Startup/HTML/scss/_portfolio.scss */
@@ -525,7 +524,6 @@ html {
 
 body {
   background: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.8;
   font-weight: 300;
