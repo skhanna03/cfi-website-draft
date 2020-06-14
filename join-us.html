@@ -73,7 +73,7 @@
         <div class="centered" style="width: 100%; left:70% !important; top:57% !important;">
             <h4 id="mission-statement" style="font-weight:bold;color: white;">Our Team</h4>
             <h1 style="color: white; font-weight: bold">Drives change.</h1><br>
-            <a href="#categories" class="smoothscroll btn btn-outline-white px-5 py-3">Be a changemaker</a>
+            <a href="#categories" data-scroll-nav="0" class="btn btn-outline-white px-5 py-3">Be a changemaker</a>
         </div>
 
         
@@ -122,7 +122,7 @@
 
 
         <!-- ===== Start of Popular Categories Section ===== -->
-    <section class="ptb80" id="categories">
+    <section data-scroll-index="0" class="ptb80" id="categories">
       <div class="container" style="color: rgb(51, 51, 51)">
 
           <div class="section-title text-center">
@@ -392,5 +392,16 @@
     var s = skrollr.init();
     </script>
     <script src="js/main.js"></script>
+    <script>
+      $.scrollIt({
+    upKey: 38,             // key code to navigate to the next section
+    downKey: 40,           // key code to navigate to the previous section
+    easing: 'linear',      // the easing function for animation
+    scrollTime: 500,       // how long (in ms) the animation takes
+    activeClass: 'active', // class given to the active nav element
+    onPageChange: null,    // function(pageIndex) that is called when page is changed
+    topOffset: -70           // offste (in px) for fixed top navigation
+    });
+    </script>
   </body>
 </html>
