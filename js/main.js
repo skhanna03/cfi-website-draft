@@ -16,18 +16,35 @@ AOS.init({
       var offsetTop = $(hash).offset()['top'];
       
       if (hash === "#combattingInequality") {
-        $("html, body").animate({scrollTop: offsetTop - 80 }, 500);
+        $("html, body").stop().animate({scrollTop: offsetTop - 80 }, 500, 'swing', function () {
+          window.location.hash = target;
+      });
       } else if (hash === "#partnerships") {
-        $("html, body").animate({scrollTop: offsetTop - 80 }, 500);
+        $("html, body").stop().animate({scrollTop: offsetTop - 80 }, 500, 'swing', function () {
+          window.location.hash = target;
+      });
       } else if (hash === "#projects") {
-        $("html, body").animate({scrollTop: offsetTop - 140 }, 500);
+        $("html, body").stop().animate({scrollTop: offsetTop - 140 }, 500, 'swing', function () {
+          window.location.hash = target;
+      });
+      } else if (hash === "#careers") {
+        $("html, body").stop().animate({scrollTop: offsetTop - 75 }, 500, 'swing', function () {
+          window.location.hash = target;
+      });
       }
     }
   
     // Run on hash change (user clicked on anchor link)
-    if ( 'onhashchange' in window ) {
-      scrollUpToCompensateForFixedHeader();
-      window.addEventListener('hashchange', scrollUpToCompensateForFixedHeader);
+    if (window.location.hash) {
+      $(window).on("hashchange", function(e) {
+        e.preventDefault();
+
+        fixedHeaderOffset(window.location.hash);
+      });
+    }
+
+    function scrollUpOnLoad() {
+
     }
 
     function scrollUpToCompensateForFixedHeader()
@@ -48,7 +65,7 @@ AOS.init({
       // Get distance of :target from top of viewport. If it's near zero, we assume
       // that the user was just scrolled to the :target.
       
-      window.scrollBy(0, -fixedHeaderOffset(hash));
+      //window.scrollBy(0, -fixedHeaderOffset(hash));
       
     }
 
