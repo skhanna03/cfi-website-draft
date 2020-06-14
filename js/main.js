@@ -13,7 +13,7 @@ AOS.init({
       console.log(width);
 
       console.log(hash);
-      var offsetTop = $(hash).offset()['top'];
+      var offsetTop = $(hash).offset().top;
       
       if (hash === "#combattingInequality") {
         $("html, body").stop().animate({scrollTop: offsetTop - 80 }, 500, 'swing', function () {
@@ -34,14 +34,11 @@ AOS.init({
       }
     }
   
-    // Run on hash change (user clicked on anchor link)
-    if (window.location.hash) {
       $(window).on("hashchange", function(e) {
         e.preventDefault();
 
         fixedHeaderOffset(window.location.hash);
       });
-    }
 
     function scrollUpOnLoad() {
 

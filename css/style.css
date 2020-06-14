@@ -697,6 +697,7 @@ textarea.form-control {
 }
 
 .navbar {
+  width: 100vw;
   height: auto;
   z-index: 100;
 }
