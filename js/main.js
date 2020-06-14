@@ -203,7 +203,7 @@ AOS.init({
       lowerNavbar.html(
         "<a href='team.html#coreValues' class='secondary-nav__link'>Core Values</a>" + 
         "<a href='team.html#ourTeam' class='secondary-nav__link'>Our Team</a>" + 
-        "<a href='team.html#careers' class='secondary-nav__link'>Careers</a>"
+        "<a href='join-us.html' class='secondary-nav__link'>Careers</a>"
         );
     } else if (this.id === "impactLink") {
       lowerNavbar.html(
