@@ -10,7 +10,7 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-transition: 0.3s;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .single-team:hover {
