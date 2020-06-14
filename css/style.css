@@ -756,7 +756,15 @@ textarea.form-control {
 }
 
 .header-background {
-  width:100%;height:100%;background:#10bcff;;opacity:0;zoom:1;position:absolute;top:0;left:0;
+  width:100%;
+  height:100%;
+  background:#10bcff;
+  background: #6cff85;
+  opacity:0;
+  zoom:1;
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 .secondary-nav {
