@@ -87,7 +87,7 @@ section#categories .category {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    height: 250px;
+    height: 275px;
 }
 
 section#categories .category h4 {
@@ -132,7 +132,7 @@ section#categories .category .category-info {
 }
 
 section#categories .category .category-info a {
-    font-family: 'Varela Round', sans-serif;
+    
     font-size: 30px;
     color: #2e2e2e;
     text-transform: capitalize;
@@ -241,7 +241,6 @@ section#categories .category:hover .category-descr {
   text-align: center;
   padding-bottom: 60px;
   margin: 0;
-  text-transform: capitalize;
 }
 
 .section-title h2:after {

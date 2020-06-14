@@ -98,22 +98,22 @@ AOS.init({
   $("#servedSection .row .col").on("mouseenter", function(e) {
       console.log(this.id);
       if (this.id === "lotSection") {
-        $("#servedSection").css({
+        $("#servedSection").stop().css({
           "background": "url('images/banner_images/lot2545.png')",
           "background-size": "cover"
         });
       } else if (this.id === "reiSection") {
-        $("#servedSection").css({
+        $("#servedSection").stop().css({
           "background": "url('images/banner_images/rei.png')",
           "background-size": "cover"
         });
       } else if (this.id === "democracySection") {
-        $("#servedSection").css({
+        $("#servedSection").stop().css({
           "background": "url('images/banner_images/democracy.png')",
           "background-size": "cover"
         });
       } else if (this.id === "haitiSection") {
-        $("#servedSection").css({
+        $("#servedSection").stop().css({
           "background": "url('images/banner_images/haiti-header.png')",
           "background-size": "cover"
         });

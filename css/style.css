@@ -1,6 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Muli:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #f0f0f0;
+  font-size: 16px !important;
+  font-weight: 300;
+  background: white;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px; }
+  .form-control:focus, .form-control:active {
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #e6e6e6; }
+
+.contact-info-wrap-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3em; }
+  .contact-info-wrap-flex .con-info {
+    width: 100%;
+    background: #fff;
+    padding: 1.5em;
+    background: white;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .contact-info-wrap-flex .con-info {
+        width: 100%;
+        margin: 4px !important; } }
+  .contact-info-wrap-flex p {
+    margin-bottom: 0;
+    color: #000; }
+    .contact-info-wrap-flex p span i {
+      color: #4aca85; }
+    .contact-info-wrap-flex p a {
+      color: #000; }
+
+
+#categories .row .category {
+  background: white;
+  text-align: center;
+}
+
+#categories .row .category .category-info a {
+  font-size: 20px;
+}
+
+#categories .row .category .category-descr {
+  font-size: 13px;
+}
+
+#categories .row .category .category-icon {
+  color: aqua;
+}
+
+#joinFirstSection .single-feature h4 {
+
+}
+
+#joinFirstSection .single-feature {
+  padding: 15px;
+}
+
+#joinFirstSection .single-feature p {
+  font-size: 16px;
+}
+
 .media-body p {
   font-size: 16px;
 }
@@ -351,7 +431,6 @@ hr {
 .portfolio_image_area .single_Portfolio .portfolio_hover .boxed-btn3:hover {
   border: 1px solid #615CFD !important;
   color: #615CFD !important;
-  color: white !important;
   background: #fff !important;
 }
 
