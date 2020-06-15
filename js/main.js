@@ -218,7 +218,10 @@ AOS.init({
         "<a href='donate.html' class='secondary-nav__link'>For COVID-19</a>" +
         "<a href='donate.html' class='secondary-nav__link'>For Black Lives Matter</a>"
         );
-    }
+    } else if (this.id === "educationLink") {
+      lowerNavbar.html(
+        "<a href='educationLink#mindset' class='secondary-nav__link'>Mindset</a>" 
+        );
 
     var topPos = scrollTop <= 90 ? '110px' : '80px';
     $('.secondary-nav').css({'display': 'inline', 'background': '#fff'});
