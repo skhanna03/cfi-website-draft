@@ -220,8 +220,9 @@ AOS.init({
         );
     } else if (this.id === "educationLink") {
       lowerNavbar.html(
-        "<a href='educationLink#mindset' class='secondary-nav__link'>Mindset</a>" 
+        "<a href='education.html#mindset' class='secondary-nav__link'>Mindset</a>" 
         );
+    }
 
     var topPos = scrollTop <= 90 ? '110px' : '80px';
     $('.secondary-nav').css({'display': 'inline', 'background': '#fff'});
