@@ -193,50 +193,77 @@ AOS.init({
     var lowerNavbar = $('.secondary-nav .secondary-nav-inner');
     lowerNavbar.html('');
 
+    var secondaryNav = false;
+
     if (this.id === "ourWorkLink") {
+      secondaryNav = true;
       lowerNavbar.html(
       "<a href='our-work.html#combattingInequality' class='secondary-nav__link'>Combatting Inequality</a>" + 
       "<a href='our-work.html#partnerships' class='secondary-nav__link'>Partnerships</a>" + 
-      "<a href='our-work.html#projects' class='secondary-nav__link'>Projects</a>"
+      "<a href='our-work.html#projects' class='secondary-nav__link'>Projects</a>" + 
+      "<a href='education.html' class='secondary-nav__link'>Education</a>"
       );
     } else if (this.id === "aboutUsLink") {
+      secondaryNav = true;
       lowerNavbar.html(
         "<a href='team.html#coreValues' class='secondary-nav__link'>Core Values</a>" + 
         "<a href='team.html#ourTeam' class='secondary-nav__link'>Our Team</a>" + 
         "<a href='join-us.html' class='secondary-nav__link'>Careers</a>"
         );
-    } else if (this.id === "impactLink") {
+    } /* else if (this.id === "impactLink") {
+      secondaryNav = true;
       lowerNavbar.html(
         "<a href='' class='secondary-nav__link'>North America</a>" + 
         "<a href='' class='secondary-nav__link'>Central America</a>" + 
         "<a href='' class='secondary-nav__link'>Europe & Asia</a>" + 
         "<a href='' class='secondary-nav__link'>Africa</a>"
         );
-    } else if (this.id === "donateButton") {
+    } */ else if (this.id === "donateButton") {
+      secondaryNav = true;
       lowerNavbar.html(
         "<a href='donate.html' class='secondary-nav__link'>For Democracy</a>" + 
         "<a href='donate.html' class='secondary-nav__link'>For COVID-19</a>" +
         "<a href='donate.html' class='secondary-nav__link'>For Black Lives Matter</a>"
         );
     } else if (this.id === "educationLink") {
+      secondaryNav = true;
       lowerNavbar.html(
         "<a href='education.html#mindset' class='secondary-nav__link'>Mindset</a>" 
         );
+    } else if (this.id === "contactLink") {
+      secondaryNav = true;
+      lowerNavbar.html(
+        "<a href='contact.html' class='secondary-nav__link'>For Nonprofits</a>" + 
+        "<a href='join-us.html' class='secondary-nav__link'>Join Our Team</a>"
+      );
     }
 
     var topPos = scrollTop <= 90 ? '110px' : '80px';
-    $('.secondary-nav').css({'display': 'inline', 'background': '#fff'});
-    $('.secondary-nav__background').css({'display': 'inline'});
 
-    $('.secondary-nav').stop().animate({
-      'height': '60px',
-      'opacity': 1,
-      'top': topPos,
-      'border-width': '1px'
-    }, 250);
-    $('.secondary-nav__background').stop().animate({
-        'opacity': 0.9
-    }, 250);
+    if(secondaryNav) {
+      $('.secondary-nav').css({'display': 'inline', 'background': '#fff'});
+      $('.secondary-nav__background').css({'display': 'inline'});
+
+      $('.secondary-nav').stop().animate({
+        'height': '60px',
+        'opacity': 1,
+        'top': topPos,
+        'border-width': '1px'
+      }, 250);
+      $('.secondary-nav__background').stop().animate({
+          'opacity': 0.9
+      }, 250);
+    } else {
+      $('.secondary-nav').stop().animate({
+        'height': '0px',
+        'opacity': 0,
+        'border-width': '0px'
+      }, 250);
+      $('.secondary-nav__background').stop().animate({
+          'display': 'none',
+          'opacity': 0
+      }, 250);
+    }
 
     if (scrollTop <= 90) {
         $('.header-background').css({
