@@ -177,7 +177,7 @@ AOS.init({
         });
       } else if (this.id === "democracySection") {
         $("#servedSection").stop().css({
-          "background": "url('images/banner_images/democracy.png')",
+          "background": "url('images/banner_images/ggm-banner.png')",
           "background-size": "cover"
         });
       } else if (this.id === "haitiSection") {
