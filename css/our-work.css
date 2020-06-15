@@ -1,4 +1,6 @@
-
+.price {
+  color: #429bb8 !important;
+}
 
 #description {
     font-family: 'Playfair Display', serif;
@@ -1239,7 +1241,7 @@ textarea.form-control {
 }
 
 .menu-food-item .price strong {
-  color: #ff7a5c;
+  color: #429bb8;;
   font-size: 20px;
 }
 
@@ -1952,7 +1954,7 @@ textarea.form-control {
 
 .menus .item .text .price {
   font-size: 30px;
-  color: #ff7a5c;
+  color: #429bb8;
   opacity: 1;
 }
 
