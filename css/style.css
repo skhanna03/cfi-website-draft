@@ -773,6 +773,7 @@ textarea.form-control {
   height:100%;
   background:#10bcff;
   background: #429bb8;
+  background: rgb(104, 182, 255);
   opacity:0;
   zoom:1;
   position:absolute;
