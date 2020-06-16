@@ -1,16 +1,35 @@
 .single-team {
     background-color: #ffffff;
-    border-radius: 5px;
     overflow: hidden;
     color: #515656;
     text-align: center;
     position: relative;
     -webkit-box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 5px 30px -10px rgba(0, 0, 0, 0.3);
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    padding-bottom: 12px;
+    border-radius: 3px;
+}
+
+.single-team h4 {
+  font-size: 22px;
+  font-family: 'Montserrat';
+}
+
+.single-team h5 {
+  font-size: 18px;
+  font-family: 'Playfair Display';
+}
+
+.single-team .subHeader {
+  margin-top: 8px;
+  font-style: italic; 
+  font-size: 12px; 
+  font-family: 'Playfair Display', serif; 
+  font-weight: normal
 }
 
 .single-team:hover {
