@@ -935,7 +935,7 @@ textarea.form-control {
   color: white;
   background: none;
   text-decoration: none;
-  border: 4px solid white;
+  border: 2px solid white;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
@@ -945,7 +945,7 @@ textarea.form-control {
   background: white;
   color:#10bcff;
   text-decoration: none;
-  border: 4px solid #10bcff;
+  border: 2px solid #10bcff;
 }
 
 .btn.btn-outline-white:hover {
@@ -965,7 +965,7 @@ textarea.form-control {
   background: transparent; 
   color: #fff;
   text-decoration: none;
-  border: 4px solid white;
+  border: 2px solid white;
 
 }
 
@@ -973,12 +973,13 @@ textarea.form-control {
   background: rgb(0, 183, 255);
   color: white;
   text-decoration: none;
+  border: 2px solid white;
 }
 
 .btn.btn-outline-blue:hover {
   background: none;
   color: rgb(0, 183, 255);
-  border: 3px solid rgb(0, 183, 255);
+  border: 2px solid rgb(0, 183, 255);
  
 }
 
@@ -1354,6 +1355,7 @@ textarea.form-control {
 .menu-food-item .price {
   text-align: left;
   width: 100%;
+  color: rgb(0, 183, 255) !important;
 }
 
 @media (min-width: 768px) {
@@ -1365,6 +1367,7 @@ textarea.form-control {
 
 .menu-food-item .price strong {
   color: #429bb8;
+  color: rgb(0, 183, 255);
   font-size: 20px;
 }
 
